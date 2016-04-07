@@ -6,3 +6,4 @@ meteor add kadira:flow-router
 meteor add meteortoys:allthings
 meteor add ultimatejs:tracker-react@=1.0.0
 meteor add twbs:boostrap
+meteor add accounts-ui accounts-password

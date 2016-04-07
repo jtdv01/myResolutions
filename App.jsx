@@ -3,12 +3,41 @@ import TrackerReact from 'meteor/ultimatejs:tracker-react';
 // import {Contact} from './client/Contact.js';
 
 Resolutions = new Mongo.Collection("resolutions");
+Contacts = new Mongo.Collection("contacts");
 
+class ResolutionsList extends React.Component{
 
-class Contact extends React.Component{
+  constructor(){
+    super();
+    this.state = {
+      'search': 'tesdfsfdst'
+    };
+  }
+
+  updateSearch(event){
+    var x = event.taget.value;
+    // this.setState({'search':x});
+    console.log(x);
+    // var x = this.state.search;
+    // console.log(x);
+  }
+
   render(){
     return(
-      <li> {this.props.contact.name} </li>
+      <div>
+      <h1> List of resolutions </h1>
+      <h2> Filter resolutions </h2>
+      <form>
+        <input type="text" value={this.state.search} onChange={this.updateSearch} ref="query_text" placeholder="Query" />
+      </form>
+      <ul>
+        {
+          this.props.resolutions.map((r) => {
+            return <Resolution resolution={r} key={r._id}/>
+          }
+        )}
+      </ul>
+    </div>
     )
   }
 }
@@ -16,7 +45,8 @@ class Contact extends React.Component{
 class Resolution extends React.Component{
   render(){
     return(
-      <li> {this.props.resolution.text} </li>
+
+      <li> {this.props.resolution.text} -- {this.props.resolution._id}</li>
     )
   }
 }
@@ -52,6 +82,15 @@ export default class App extends TrackerReact(React.Component){
 
   }
 
+
+
+  removeResolution(event){
+    event.preventDefault();
+    console.log(this);
+
+    // var idToDelete = this.refs.
+  }
+
   render(){
     let res =this.resolutions();
     let contacts = this.contacts();
@@ -63,22 +102,18 @@ export default class App extends TrackerReact(React.Component){
     return(
       <div>
         <h1> Resolutions </h1>
+
+        <h2> Add resolution here </h2>
         <form className="new-resolution" onSubmit={this.addResolution.bind(this)}>
             <input
               type="text"
               ref="resolution"
               placeholder="Finish React Meteor Series"
-
               />
         </form>
 
-        Rest goes here
-        <ul>
-          {res.map((x) => {
-              return <Resolution resolution={x} key={x._id}/>
-          })}
-        </ul>
 
+        <ResolutionsList resolutions={res}/>
       </div>
     )
   }
