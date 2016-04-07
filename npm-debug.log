@@ -1,0 +1,187 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'react-addons-pure-render-mixin' ]
+2 info using npm@2.14.22
+3 info using node@v0.10.43
+4 verbose install initial load of /Users/jemacar/meteor/myResolutions/package.json
+5 verbose installManyTop reading scoped package data from /Users/jemacar/meteor/myResolutions/node_modules/react/package.json
+6 verbose installManyTop reading scoped package data from /Users/jemacar/meteor/myResolutions/node_modules/react-dom/package.json
+7 verbose installManyTop reading scoped package data from /Users/jemacar/meteor/myResolutions/node_modules/react-mounter/package.json
+8 verbose readDependencies loading dependencies from /Users/jemacar/meteor/myResolutions/package.json
+9 silly cache add args [ 'react-addons-pure-render-mixin', null ]
+10 verbose cache add spec react-addons-pure-render-mixin
+11 silly cache add parsed spec { raw: 'react-addons-pure-render-mixin',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'react-addons-pure-render-mixin',
+11 silly cache add   rawSpec: '',
+11 silly cache add   spec: 'latest',
+11 silly cache add   type: 'tag' }
+12 silly addNamed react-addons-pure-render-mixin@latest
+13 verbose addNamed "latest" is being treated as a dist-tag for react-addons-pure-render-mixin
+14 info addNameTag [ 'react-addons-pure-render-mixin', 'latest' ]
+15 silly mapToRegistry name react-addons-pure-render-mixin
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/react-addons-pure-render-mixin
+19 verbose addNameTag registry:https://registry.npmjs.org/react-addons-pure-render-mixin not in flight; fetching
+20 verbose request uri https://registry.npmjs.org/react-addons-pure-render-mixin
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 00:12:06
+23 verbose request id 2eeede9950fed5cf
+24 http request GET https://registry.npmjs.org/react-addons-pure-render-mixin
+25 http 200 https://registry.npmjs.org/react-addons-pure-render-mixin
+26 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 verbose headers   etag: '"83MK3C9PVFYSI38E02FANYUS3"',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   'cache-control': 'max-age=300',
+26 verbose headers   'content-length': '19394',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   date: 'Thu, 07 Apr 2016 14:12:08 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '0',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-mel6523-MEL',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1460038327.670493,VS0,VE1147',
+26 verbose headers   vary: 'Accept-Encoding' }
+27 silly get cb [ 200,
+27 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly get     etag: '"83MK3C9PVFYSI38E02FANYUS3"',
+27 silly get     'content-type': 'application/json',
+27 silly get     'cache-control': 'max-age=300',
+27 silly get     'content-length': '19394',
+27 silly get     'accept-ranges': 'bytes',
+27 silly get     date: 'Thu, 07 Apr 2016 14:12:08 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     age: '0',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-mel6523-MEL',
+27 silly get     'x-cache': 'MISS',
+27 silly get     'x-cache-hits': '0',
+27 silly get     'x-timer': 'S1460038327.670493,VS0,VE1147',
+27 silly get     vary: 'Accept-Encoding' } ]
+28 verbose get saving react-addons-pure-render-mixin to /Users/jemacar/.npm/registry.npmjs.org/react-addons-pure-render-mixin/.cache.json
+29 verbose correctMkdir /Users/jemacar/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for react-addons-pure-render-mixin with tag latest
+31 silly addNamed react-addons-pure-render-mixin@0.14.8
+32 verbose addNamed "0.14.8" is a plain semver version for react-addons-pure-render-mixin
+33 silly mapToRegistry name react-addons-pure-render-mixin
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry uri https://registry.npmjs.org/react-addons-pure-render-mixin
+37 verbose addRemoteTarball https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-0.14.8.tgz not in flight; adding
+38 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-0.14.8.tgz',
+38 verbose addRemoteTarball   '4109af2d6ceb72e3897bf343d8ae7f329a6713d4' ]
+39 info retry fetch attempt 1 at 00:12:08
+40 info attempt registry request try #1 at 00:12:08
+41 http fetch GET https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-0.14.8.tgz
+42 http fetch 200 https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-0.14.8.tgz
+43 silly fetchAndShaCheck shasum 4109af2d6ceb72e3897bf343d8ae7f329a6713d4
+44 verbose addTmpTarball /var/folders/sr/xr7lb_d11v39rhbhj3q7q6q40000gn/T/npm-15562-50312642/registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-0.14.8.tgz not in flight; adding
+45 verbose addTmpTarball already have metadata; skipping unpack for react-addons-pure-render-mixin@0.14.8
+46 verbose correctMkdir /Users/jemacar/.npm correctMkdir not in flight; initializing
+47 silly cache afterAdd react-addons-pure-render-mixin@0.14.8
+48 verbose afterAdd /Users/jemacar/.npm/react-addons-pure-render-mixin/0.14.8/package/package.json not in flight; writing
+49 verbose correctMkdir /Users/jemacar/.npm correctMkdir not in flight; initializing
+50 verbose afterAdd /Users/jemacar/.npm/react-addons-pure-render-mixin/0.14.8/package/package.json written
+51 silly install resolved [ { name: 'react-addons-pure-render-mixin',
+51 silly install resolved     version: '0.14.8',
+51 silly install resolved     main: 'index.js',
+51 silly install resolved     repository:
+51 silly install resolved      { type: 'git',
+51 silly install resolved        url: 'git+https://github.com/facebook/react.git' },
+51 silly install resolved     keywords: [ 'react', 'react-addon' ],
+51 silly install resolved     license: 'BSD-3-Clause',
+51 silly install resolved     dependencies: {},
+51 silly install resolved     peerDependencies: { react: '^0.14.8' },
+51 silly install resolved     description: 'This package provides the React PureRenderMixin add-on.',
+51 silly install resolved     bugs: { url: 'https://github.com/facebook/react/issues' },
+51 silly install resolved     homepage: 'https://github.com/facebook/react#readme',
+51 silly install resolved     _id: 'react-addons-pure-render-mixin@0.14.8',
+51 silly install resolved     _shasum: '4109af2d6ceb72e3897bf343d8ae7f329a6713d4',
+51 silly install resolved     _resolved: 'https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-0.14.8.tgz',
+51 silly install resolved     _from: 'react-addons-pure-render-mixin@latest',
+51 silly install resolved     scripts: {},
+51 silly install resolved     _npmVersion: '2.14.7',
+51 silly install resolved     _nodeVersion: '4.2.1',
+51 silly install resolved     _npmUser: { name: 'gaearon', email: 'dan.abramov@gmail.com' },
+51 silly install resolved     dist:
+51 silly install resolved      { shasum: '4109af2d6ceb72e3897bf343d8ae7f329a6713d4',
+51 silly install resolved        tarball: 'https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-0.14.8.tgz' },
+51 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+51 silly install resolved     _npmOperationalInternal:
+51 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+51 silly install resolved        tmp: 'tmp/react-addons-pure-render-mixin-0.14.8.tgz_1459268439877_0.694907917175442' },
+51 silly install resolved     directories: {} } ]
+52 info install react-addons-pure-render-mixin@0.14.8 into /Users/jemacar/meteor/myResolutions
+53 info installOne react-addons-pure-render-mixin@0.14.8
+54 verbose installOne of react-addons-pure-render-mixin to /Users/jemacar/meteor/myResolutions not in flight; installing
+55 verbose correctMkdir /Users/jemacar/.npm/_locks correctMkdir not in flight; initializing
+56 verbose lock using /Users/jemacar/.npm/_locks/react-addons-pure-render-6aa1a3fc0b782bfe.lock for /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin
+57 silly install write writing react-addons-pure-render-mixin 0.14.8 to /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin
+58 verbose unbuild node_modules/react-addons-pure-render-mixin
+59 silly gentlyRm /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin is being purged from base /Users/jemacar/meteor/myResolutions
+60 verbose gentlyRm don't care about contents; nuking /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin
+61 verbose tar unpack /Users/jemacar/.npm/react-addons-pure-render-mixin/0.14.8/package.tgz
+62 verbose tar unpacking to /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin
+63 silly gentlyRm /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin is being purged
+64 verbose gentlyRm don't care about contents; nuking /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin
+65 silly gunzTarPerm modes [ '755', '644' ]
+66 silly gunzTarPerm extractEntry package.json
+67 silly gunzTarPerm extractEntry README.md
+68 silly gunzTarPerm extractEntry LICENSE
+69 silly gunzTarPerm extractEntry index.js
+70 silly gunzTarPerm extractEntry PATENTS
+71 verbose write writing to /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin/package.json
+72 info preinstall react-addons-pure-render-mixin@0.14.8
+73 verbose readDependencies loading dependencies from /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin/package.json
+74 silly prepareForInstallMany adding react@^0.14.8 from react-addons-pure-render-mixin peerDependencies
+75 warn peerDependencies The peer dependency react@^0.14.8 included from react-addons-pure-render-mixin will no
+76 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+77 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+78 verbose readDependencies loading dependencies from /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin/package.json
+79 silly install resolved []
+80 verbose about to build /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin
+81 info build /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin
+82 info linkStuff react-addons-pure-render-mixin@0.14.8
+83 silly linkStuff react-addons-pure-render-mixin@0.14.8 has /Users/jemacar/meteor/myResolutions/node_modules as its parent node_modules
+84 verbose linkBins react-addons-pure-render-mixin@0.14.8
+85 verbose linkMans react-addons-pure-render-mixin@0.14.8
+86 verbose rebuildBundles react-addons-pure-render-mixin@0.14.8
+87 info install react-addons-pure-render-mixin@0.14.8
+88 info postinstall react-addons-pure-render-mixin@0.14.8
+89 verbose readDependencies loading dependencies from /Users/jemacar/meteor/myResolutions/package.json
+90 verbose targetResolver reading package data from /Users/jemacar/meteor/myResolutions/node_modules/react/package.json
+91 verbose targetResolver reading package data from /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin/package.json
+92 verbose targetResolver reading package data from /Users/jemacar/meteor/myResolutions/node_modules/react-dom/package.json
+93 verbose targetResolver reading package data from /Users/jemacar/meteor/myResolutions/node_modules/react-mounter/package.json
+94 verbose already installed skipping react@^0.14.8 /Users/jemacar/meteor/myResolutions
+95 silly install resolved []
+96 verbose unlock done using /Users/jemacar/.npm/_locks/react-addons-pure-render-6aa1a3fc0b782bfe.lock for /Users/jemacar/meteor/myResolutions/node_modules/react-addons-pure-render-mixin
+97 verbose validateInstall loading /Users/jemacar/meteor/myResolutions/package.json for validation
+98 verbose stack Error: The package react@0.14.7 does not satisfy its siblings' peerDependencies requirements!
+98 verbose stack     at /Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install.js:125:32
+98 verbose stack     at /Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/lib/install.js:268:7
+98 verbose stack     at /Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+98 verbose stack     at /Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+98 verbose stack     at cb (/Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+98 verbose stack     at /Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+98 verbose stack     at cb (/Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+98 verbose stack     at /Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+98 verbose stack     at cb (/Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+98 verbose stack     at /Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+99 verbose cwd /Users/jemacar/meteor/myResolutions
+100 error Darwin 15.0.0
+101 error argv "node" "/Users/jemacar/.meteor/packages/meteor-tool/.1.3.0_3.1htpiiu++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "--save" "react-addons-pure-render-mixin"
+102 error node v0.10.43
+103 error npm  v2.14.22
+104 error code EPEERINVALID
+105 error peerinvalid The package react@0.14.7 does not satisfy its siblings' peerDependencies requirements!
+105 error peerinvalid Peer react-dom@0.14.7 wants react@^0.14.7
+105 error peerinvalid Peer react-mounter@1.1.0 wants react@0.14.x
+105 error peerinvalid Peer react-addons-pure-render-mixin@0.14.8 wants react@^0.14.8
+106 verbose exit [ 1, true ]
