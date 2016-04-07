@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {Template} from 'meteor/templating';
 import {Blaze} from 'meteor/blaze';
 
-export default class AccountsUIWrapper extends React.Component{
+export class AccountsUIWrapper extends React.Component{
     componentDidMount(){
       // Use meteor to render the loginButtons template from accounts-ui
       this.view = Blaze.render(
