@@ -28,13 +28,18 @@ export default class ResolutionsList extends React.Component{
         <form>
           <input type="text" value={this.state.search} onChange={this.updateSearch} ref="query_text" placeholder="Query" />
         </form>
-        <ul>
+
+        <table>
+          <tbody>
           {
-            this.props.resolutions.map((r) => {
+            this.props.resolutions.map((r)=>{
               return <Resolution resolution={r} key={r._id}/>
-            }
-          )}
-        </ul>
+            })
+          }
+          </tbody>
+
+        </table>
+
     </div>
     )
   }

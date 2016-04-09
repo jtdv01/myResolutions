@@ -3,6 +3,7 @@ import {foo} from './importMe';
 console.log(foo);
 import Resolution from './Resolution';
 import ResolutionsList from './ResolutionsList';
+import ResolutionAddForm from './ResolutionAddForm';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
 import AccountsUIWrapper from './AccountsUIWrapper';
 // import {Contact} from './client/Contact.js';
@@ -13,19 +14,6 @@ Contacts = new Mongo.Collection("contacts");
 
 
 export default class App extends TrackerReact(React.Component){
-
-  contacts(){
-    return [{name:"Joe",number:"555 555"},
-      {
-        name:"Jane",
-        number:"231 1231 23"
-      }
-    ];
-  }
-
-  resolutions(){
-    return Resolutions.find().fetch();
-  }
 
   addResolution(event){
     event.preventDefault();
@@ -42,6 +30,21 @@ export default class App extends TrackerReact(React.Component){
     this.refs.resolution.value = "";
 
   }
+
+  contacts(){
+    return [{name:"Joe",number:"555 555"},
+      {
+        name:"Jane",
+        number:"231 1231 23"
+      }
+    ];
+  }
+
+  resolutions(){
+    return Resolutions.find().fetch();
+  }
+
+
 
 
 
@@ -65,7 +68,7 @@ export default class App extends TrackerReact(React.Component){
         <h1> Resolutions </h1>
         <AccountsUIWrapper />
 
-        <h2> Add resolution here </h2>
+        <ResolutionAddForm />
         <form className="new-resolution" onSubmit={this.addResolution.bind(this)}>
             <input
               type="text"
@@ -73,7 +76,6 @@ export default class App extends TrackerReact(React.Component){
               placeholder="Finish React Meteor Series"
               />
         </form>
-
 
         <ResolutionsList resolutions={res}/>
       </div>
