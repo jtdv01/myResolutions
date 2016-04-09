@@ -1,11 +1,9 @@
 import React from 'react';
-import {foo} from './importMe';
-console.log(foo);
 import Resolution from './Resolution';
 import ResolutionsList from './ResolutionsList';
 import ResolutionAddForm from './ResolutionAddForm';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
-import AccountsUIWrapper from './AccountsUIWrapper';
+import AccountsUIWrapper from '../AccountsUIWrapper';
 // import {Contact} from './client/Contact.js';
 
 Resolutions = new Mongo.Collection("resolutions");
