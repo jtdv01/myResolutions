@@ -14,12 +14,15 @@ export default class UsersPage extends React.Component{
 
   render(){
     let users = this.users();
-    console.log(users[0]);
-
+    let u= users[0];
+    console.log(u);
     return(
-      <h1> Users </h1>
-      
-    )
+      <div>
+        <h1> Users </h1>
+        List of users go here
+        <User user={u} />
+      </div>
+    );
   }
 }
 
