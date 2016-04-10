@@ -14,13 +14,15 @@ export default class UsersPage extends React.Component{
 
   render(){
     let users = this.users();
-    let u= users[0];
-    console.log(u);
     return(
       <div>
         <h1> Users </h1>
         List of users go here
-        <User user={u} />
+        {
+          users.map((u)=>{
+            return(<User user={u} key={u._id}/>);
+          })
+        }
       </div>
     );
   }
