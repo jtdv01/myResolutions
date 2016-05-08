@@ -63,21 +63,22 @@ export default class App extends TrackerReact(React.Component){
 
     return(
       <div>
-      <div id="bootstrap-menu" class="navbar navbar-default " role="navigation">
-          <div class="container-fluid">
-              <div class="navbar-header"><a class="navbar-brand" href="#">Brand</a>
-                  <button type="button" class="btn-primary" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      <div id="bootstrap-menu" className="navbar navbar-default " role="navigation">
+          <div className="container-fluid">
+              <div className="navbar-header"><a className="navbar-brand" href="#">MyResolutions</a>
+                  <button type="button" className="btn-primary" data-toggle="collapse" data-target=".navbar-menubuilder"><span className="sr-only">Toggle navigation</span><span className="icon-bar"></span><span className="icon-bar"></span><span className="icon-bar"></span>
                   </button>
               </div>
-              <div class="collapse navbar-collapse navbar-menubuilder">
-                  <ul class="nav navbar-nav navbar-left">
-                      <li><a href="/">Home</a>
+              <div className="collapse navbar-collapse navbar-menubuilder">
+                  <ul className="nav navbar-nav navbar-left">
+                      <li>
+                        <a href="/">Home</a>
                       </li>
-                      <li><a href="/products">Products</a>
+                      <li>
+                        <a href="/">Users</a>
                       </li>
-                      <li><a href="/about-us">About Us</a>
-                      </li>
-                      <li><a href="/contact">Contact Us</a>
+                      <li>
+                        <a href=""><AccountsUIWrapper/></a>
                       </li>
                   </ul>
               </div>
@@ -85,8 +86,6 @@ export default class App extends TrackerReact(React.Component){
       </div>
 
 
-        <h1> Resolutions </h1>
-        <AccountsUIWrapper />
 
         <ResolutionAddForm />
         <form className="new-resolution" onSubmit={this.addResolution.bind(this)}>
