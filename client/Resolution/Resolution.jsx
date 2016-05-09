@@ -11,6 +11,12 @@ export default class Resolution extends React.Component{
         <td>
         {this.props.resolution._id}
         </td>
+        <td>
+        {this.props.resolution.complete.toString()}
+        </td>
+        <td>
+        {this.props.resolution.createdAt.toString()}
+        </td>
       </tr>
     )
   }

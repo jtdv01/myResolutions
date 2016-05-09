@@ -13,6 +13,21 @@ Contacts = new Mongo.Collection("contacts");
 
 export default class App extends TrackerReact(React.Component){
 
+  // Subscribe on create
+  constructor(){
+    super();
+    this.state = {
+      subscription:{
+        resolutions: Meteor.subscribe("allResolutions")
+      }
+    }
+  }
+
+  // Stop subscription on componnent unmount
+  componentWillUnmount(){
+    this.state.subscription.resolutions.stop();
+  }
+
   addResolution(event){
     event.preventDefault();
     console.log(this);
