@@ -34,13 +34,16 @@ export default class App extends TrackerReact(React.Component){
 
     var text = this.refs.resolution.value.trim();
 
-    Resolutions.insert({
-      text:text,
-      complete:false,
-      createdAt: new Date()
-    });
+    Meteor.call("addResolution",text,()=>{
+      this.refs.resolution.value = "";
+    })
+    // Resolutions.insert({
+    //   text:text,
+    //   complete:false,
+    //   createdAt: new Date()
+    // });
 
-    this.refs.resolution.value = "";
+
 
   }
 
@@ -103,13 +106,7 @@ export default class App extends TrackerReact(React.Component){
 
 
         <ResolutionAddForm />
-        <form className="new-resolution" onSubmit={this.addResolution.bind(this)}>
-            <input
-              type="text"
-              ref="resolution"
-              placeholder="Finish React Meteor Series"
-              />
-        </form>
+
 
         <ResolutionsList resolutions={res}/>
       </div>
@@ -117,6 +114,13 @@ export default class App extends TrackerReact(React.Component){
   }
 }
 
+// <form className="new-resolution" onSubmit={this.addResolution.bind(this)}>
+//     <input
+//       type="text"
+//       ref="resolution"
+//       placeholder="Finish React Meteor Series"
+//       />
+// </form>
 // if(Meteor.isClient){
 //   Meteor.startup(function(){
 //     React.render(<App />,document.getElementById('render-target'));

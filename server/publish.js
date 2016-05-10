@@ -3,5 +3,7 @@ Resolutions = new Mongo.Collection("resolutions");
 Users = Meteor.users;
 
 Meteor.publish("allResolutions",function(){
-  return Resolutions.find({complete:false});
+  return Resolutions.find();
+  // If you just want to find non-completes
+  // return Resolutions.find({complete:false});
 });

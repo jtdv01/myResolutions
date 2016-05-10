@@ -26,7 +26,17 @@ export default class ResolutionAddForm extends React.Component{
 
   render(){
     return(
-      <h2> Add resolution here </h2>
+
+      <form className="new-resolution" onSubmit={this.addResolution.bind(this)}>
+        <div className="container form-group">
+          <input
+            type="text"
+            className="input-lg"
+            ref="resolution"
+            placeholder="Add resolutions here"
+            />
+          </div>
+      </form>
 
     )
   }

@@ -10,6 +10,6 @@ https://www.youtube.com/watch?v=B_HJCmoSvmc
   - still need to fix this
 
 # Todo
-- Remove insecure package
-- Remove autopublish
-  - Add publish and subscribe
+- Removing / updating data
+- Ading user accounts / permissions
+- Conditional in jsx
