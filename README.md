@@ -10,6 +10,5 @@ https://www.youtube.com/watch?v=B_HJCmoSvmc
   - still need to fix this
 
 # Todo
-- Removing / updating data
 - Ading user accounts / permissions
 - Conditional in jsx

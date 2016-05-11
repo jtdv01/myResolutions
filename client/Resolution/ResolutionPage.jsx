@@ -13,12 +13,12 @@ Contacts = new Mongo.Collection("contacts");
 
 export default class App extends TrackerReact(React.Component){
 
-  // Subscribe on create
+  // Subscribe on create, which is tied to TrackerReact
   constructor(){
     super();
     this.state = {
       subscription:{
-        resolutions: Meteor.subscribe("allResolutions")
+        resolutions: Meteor.subscribe("userResolutions")
       }
     }
   }
@@ -63,7 +63,6 @@ export default class App extends TrackerReact(React.Component){
 
 
 
-
   removeResolution(event){
     event.preventDefault();
     console.log(this);
@@ -73,6 +72,7 @@ export default class App extends TrackerReact(React.Component){
 
   render(){
     let res =this.resolutions();
+    console.log(res);
     let contacts = this.contacts();
     // Need to add this incase its zero while loading
     // if(res.length <1){
@@ -96,7 +96,7 @@ export default class App extends TrackerReact(React.Component){
                         <a href="/">Users</a>
                       </li>
                       <li>
-                        <a href=""><AccountsUIWrapper/></a>
+                        <AccountsUIWrapper/>
                       </li>
                   </ul>
               </div>
